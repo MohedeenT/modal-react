@@ -7,13 +7,21 @@ export default function Container(){
 
     const [store, setStore] = useState({
         showModal: false,
-        modalText:'placeHolder'
+        modalText:'placeHolder',
+        jokeProps:{
+            modalPunchline:'placeHolder',
+            showJoke: false
+        }
+        
     })
     return(
     <>
     <App
-     store={store}
-     setStore={setStore}/>
-    <Modal store={store}/>
+     setStore={setStore}
+     store={store}/>
+    <Modal 
+    store={store}
+    setStore={setStore}
+    />
     </>)
 }

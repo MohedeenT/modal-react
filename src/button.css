@@ -1,4 +1,5 @@
-.container button {
+.container button,
+#btn-punch {
   appearance: button;
   background-color: #1899d6;
   border: solid transparent;
